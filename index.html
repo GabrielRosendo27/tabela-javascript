@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1></h1>
+    </div>
+    <!-- gastos  -->
+    <div class="container">
+      <div class="gastos">
+        <h2>Gastos</h2>
+        <div class="gastos-formulario">
+          <form action="">
+            <label for="date">Selecione a data</label>
+            <input type="date" name="date" id="date" value="2023-02-20" />
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" itemid="categoria">
+              <option value="lazer">Lazer</option>
+              <option value="contas">Contas</option>
+              <option value="mercado">Mercado</option>
+              <option value="compra-online">Compra Online</option>
+            </select>
+            <label for="valor">Valor(R$) </label>
+            <input type="number" name="valor" id="valor" />
+            <div class="caixa-invalido"><span>Campo Inválido</span></div>
+            <button type="button" id="botao">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <!-- tabela -->
+      <div class="tabelas-bg">
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

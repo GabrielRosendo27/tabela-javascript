@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: monospace;
+}
+/* header  */
+.header {
+  background-color: #211b25;
+  height: 15vh;
+}
+.header h1 {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+  color: #1c1c1c;
+}
+/* container  */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+/* gastos  */
+.gastos {
+  width: 22vw;
+  min-height: 85vh;
+  padding: 25px;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset -22px 0px 12px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -22px 0px 12px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -22px 0px 12px -16px rgba(0, 0, 0, 0.75);
+}
+.gastos h2 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+/* gastos formulario  */
+.gastos-formulario label {
+  display: block;
+  font-size: 1.7rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+.gastos-formulario input,
+select {
+  padding: 8px 4px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  text-align: left;
+  font-size: 1.4rem;
+  text-align: left;
+  background-color: #fffafa;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #dcdcdc;
+}
+.gastos-formulario input:hover,
+select:hover {
+  background-color: #f0efef;
+  border: 1px solid #a09f9f;
+  transition: all 0.3s;
+}
+#date {
+  width: 57%;
+}
+#categoria {
+  width: 66.5%;
+}
+#valor {
+  font-weight: 500;
+  margin-bottom: 0px;
+  width: 35.5%;
+}
+.caixa-invalido {
+  margin-bottom: 10px;
+  display: none;
+}
+.caixa-invalido span {
+  display: block;
+  color: red;
+  letter-spacing: 0.5px;
+}
+.gastos-formulario button {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  display: block;
+  padding: 4px 12px;
+}
+/* tabela  */
+.tabelas-bg {
+  background: rgb(72, 77, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 77, 89, 1) 0%,
+    rgba(135, 135, 190, 1) 100%
+  );
+}
+
+table {
+  width: 35vw;
+  margin-top: 30px;
+  margin-left: 70px;
+  border-collapse: collapse;
+}
+table tr th,
+table tr td {
+  border: 2px solid #000403;
+  border-radius: 4px;
+  background: #e5e5e5;
+}
+table tr th {
+  width: 35%;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 6px 12px;
+}
+table tr td {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 6px;
+}
+#botao {
+  padding: 5px 10px;
+  cursor: pointer;
+}
